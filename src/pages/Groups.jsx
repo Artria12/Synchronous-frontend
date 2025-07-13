@@ -129,7 +129,7 @@ const Groups=()=> {
          setConfirmDeleteDialog(false)
   }
     useEffect(()=>{
-      if(chatId){
+      if(false){
         setGroupName(`Group Name ${chatId}`)
         setGroupNameUpdatedValue(`Group Name ${chatId}`)
       }
