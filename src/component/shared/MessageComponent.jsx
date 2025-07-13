@@ -7,7 +7,7 @@ import { fileFormat } from "../../lib/features";
 import { motion } from "framer-motion";
 const MessageComponent=({message,user})=>{
       const { sender, content, attachments = [], createdAt } = message;
-      const sameSender = sender?._id === user?.user?._id||user?._id;
+      const sameSender = sender?._id === user?.user?._id
       console.log("messageComponent",sender,user)
       const timeAgo=moment(createdAt).fromNow()
    return (
